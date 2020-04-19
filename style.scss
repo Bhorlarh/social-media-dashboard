@@ -176,9 +176,14 @@ header {
   // transition: .3s;
 }
 
-.dark-theme .slider,
-.slider:hover {
-     background: base.$dark-toggle;
+.dark-theme .slider {
+   background: base.$dark-toggle;
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider:hover {
+    background: base.$dark-toggle;
+  }
 }
 
 .slider:before {

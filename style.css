@@ -154,11 +154,15 @@ header .f4 {
   border-radius: 34px;
 }
 
-.dark-theme .slider,
-.slider:hover {
+.dark-theme .slider {
   background: linear-gradient(to right, #378fe6, #3eda82);
 }
 
+@media only screen and (min-width: 1200px) {
+  .slider:hover {
+    background: linear-gradient(to right, #378fe6, #3eda82);
+  }
+}
 .slider:before {
   position: absolute;
   content: "";
