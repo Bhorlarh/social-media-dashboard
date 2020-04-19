@@ -1,0 +1,134 @@
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 320px));
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  grid-gap: 1.5rem;
+}
+
+.card-bg {
+  background-color: #f0f2fa;
+}
+
+.card-bg:hover {
+  cursor: pointer;
+  background-color: #d5d7dd;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  padding: 1.5rem 0;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+.card h1 {
+  font-size: 3rem;
+}
+.card span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-top img {
+  margin-right: 0.4rem;
+}
+
+.card::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  height: 0.25rem;
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.facebook::before {
+  background-color: deepskyblue;
+}
+
+.twitter::before {
+  background-color: #1ca0f2;
+}
+
+.instagram::before {
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.youtube::before {
+  background-color: #c4032a;
+}
+
+@media screen and (min-width: 768px) {
+  #theme {
+    width: 10rem;
+  }
+}
+.dark-theme .card-bg {
+  background: #252a41;
+}
+.dark-theme .card-bg:hover {
+  background-color: #2e3552;
+}
+.dark-theme .grayed-text {
+  color: #8b97c6;
+}
+
+.summary-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 320px));
+  padding-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  grid-gap: 1rem;
+}
+
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 8rem;
+  padding: 1.7rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 0.3rem;
+}
+.summary-card .f1 {
+  font-size: 2rem;
+}
+.summary-card div {
+  display: flex;
+  justify-content: space-between;
+}
+.summary-card div:nth-child(1)::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("./images/icon-facebook.svg") no-repeat center center;
+}
+.summary-card div:nth-child(2) {
+  align-items: baseline;
+}
+
+@media screen and (min-width: 568px) {
+  .summary-section,
+.card-section {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .summary-section,
+.card-section {
+    justify-content: space-between;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */
